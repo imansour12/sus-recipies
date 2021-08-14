@@ -7,7 +7,10 @@ const NavBar = () => {
       <div className="NavBar">
         <div className="NavBackground">
           <div className="susPicture">
-            <img src="../../assets/susPicture.png" alt="Sussy picture"></img>
+            <img
+              src={require("../../assets/susPicture.png")}
+              alt="Sussy picture"
+            ></img>
           </div>
         </div>
       </div>
