@@ -3,6 +3,7 @@ import logo from "./assets/susPicture.png";
 
 let styles = {
   // Styles for the top navigation
+  // TODO: update styles to make it more responsive: https://www.w3schools.com/css/css_rwd_images.asp using min-device-width
   topnav: {
     backgroundColor: "#fff",
     width: "100%",
@@ -16,6 +17,7 @@ let styles = {
     borderRadius: "0.2em",
     paddingTop: "1em",
     height: "9.6%",
+    textAlign: "center",
   },
   footer: {
     position: "fixed",
@@ -30,14 +32,22 @@ let styles = {
     fontSize: "1.5vw",
     color: "black",
   },
+  topnavLogo: {
+    overflow: "auto",
+    height: "100%",
+    display: "inline-block",
+    float: "left",
+    margin: 0,
+    padding: 0,
+    paddingLeft: "0.5em",
+  },
 };
 function App() {
   return (
     <div>
       <div style={styles.topnav}>
-        <a className="active" href="#home">
-          Home
-        </a>
+        <img style={styles.topnavLogo} src={logo}></img>
+
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
