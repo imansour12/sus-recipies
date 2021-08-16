@@ -31,6 +31,7 @@ let styles = {
   footerText: {
     fontSize: "1.5vw",
     color: "black",
+    fontFamily: "Roboto",
   },
   topnavLogo: {
     overflow: "auto",
@@ -39,18 +40,50 @@ let styles = {
     float: "left",
     margin: 0,
     padding: 0,
-    paddingLeft: "0.5em",
+    paddingLeft: "4vw",
+    transition: 0.2 /* Animation */,
+  },
+  headerText: {
+    fontSize: "1.5vw",
+    float: "left",
+    marginLeft: "1.7em",
+    fontSize: "1.5vw",
+    fontFamily: "Roboto",
+
+    letterSpacing: "2px",
+  },
+  topnavElements: {
+    color: "#2ACC3A",
+    textDecoration: "none",
+    fontFamily: "Roboto",
+    marginLeft: "1.7em",
+    letterSpacing: "2px",
+    paddingTop: "5px",
+    fontSize: "20px",
+    fontWeight: "bold",
   },
 };
 function App() {
   return (
     <div>
       <div style={styles.topnav}>
-        <img style={styles.topnavLogo} src={logo}></img>
+        <img style={styles.topnavLogo} src={logo} alt="AMOGUS"></img>
+        <p style={styles.headerText}>
+          The only place for allll of your sus recipies
+        </p>
+        <a href="#news" style={styles.topnavElements}>
+          Recipies
+        </a>
+        <a href="#contact" style={styles.topnavElements}>
+          Food Pisc
+        </a>
+        <a href="#about" style={styles.topnavElements}>
+          Feet Pics
+        </a>
+      </div>
 
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+      <div>
+        <p>Hello</p>
       </div>
 
       <div style={styles.footer}>
