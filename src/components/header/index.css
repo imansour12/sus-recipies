@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  height: 9.6%;
+}
+
+li {
+  float: right;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #2acc3a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  letter-spacing: 3.4px;
+  font-family: Roboto;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.amogusImage {
+  float: left;
+  /*make this the same height of its parent object*/
+  height: 3em;
+  width: auto;
+  margin-left: 5%;
+}
+
+p {
+  letter-spacing: 0.11em;
+  color: black;
+  font-family: Roboto;
+  float: left;
+  margin-top: 1em;
+  margin-left: 5%;
+}

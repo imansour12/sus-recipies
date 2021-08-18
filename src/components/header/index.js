@@ -1,22 +1,23 @@
 import React from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import "./index.css";
+import logo from "../../assets/susPicture.png";
 
 const Header = () => {
   return (
     <>
-      <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/">Home</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <ul>
+        <img className="amogusImage" src={logo} alt="AMOGUS SUSSY BAKA" />
+        <p>The only place for allll of your sus recipies</p>
+        <li>
+          <a href="/">Recipies</a>
+        </li>
+        <li>
+          <a href="#">Food Pics</a>
+        </li>
+        <li>
+          <a href="#">Feet Pics</a>
+        </li>
+      </ul>
     </>
   );
 };
