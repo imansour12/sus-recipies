@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "./components/footer/index";
-import Header from "./components/header/index";
-import DownBad from "./pages/downBad/index";
+import { Route, Switch } from "react-router-dom";
+import DownBadPage from "./pages/downBad";
+import Home from "./pages/home/index";
 
 function App() {
   return (
@@ -9,8 +9,14 @@ function App() {
       <div>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Header />
-        <Footer />
+        <Switch>
+          <Route path="/downBad">
+            <DownBadPage />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
     </>
   );

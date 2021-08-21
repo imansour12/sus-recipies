@@ -1,14 +1,16 @@
 import React from "react";
-import meme from "../../assets/downBad.jpg";
 import Header from "../../components/header/index";
+import Footer from "../../components/footer/index";
+import DownBad from "../../components/downBad/index";
 
-const DownBad = () => {
+const DownBadPage = () => {
   return (
     <div>
       <Header />
-      <img src={meme} alt="Down Bad" />
+      <DownBad />
+      <Footer />
     </div>
   );
 };
 
-export default DownBad;
+export default DownBadPage;
