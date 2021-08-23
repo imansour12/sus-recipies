@@ -10,4 +10,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-//DONT FORGOR TO ADD DOCKER THINGS
+//DONT FORGOR TO ADD DOCKER THINGS: https://www.pluralsight.com/guides/using-react.js-with-docker
