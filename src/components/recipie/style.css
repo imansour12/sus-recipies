@@ -1,26 +1,4 @@
-.fetch-button {
-  /*Center it in the middle of the page and make it noticeable*/
-  position: absolute;
-
-  /*Set the size of the button*/
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ff0000;
-  color: white;
-  font-size: 50px;
-  font-family: "Arial";
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-
-  /*Set the position of the button*/
-  left: 50%;
-  top: 50%;
-
-  /*Set the position of the button*/
-  transform: translate(-50%, -50%);
+@import url("https://fonts.googleapis.com/css2?family=Besley&display=swap");
+* {
+  font-family: "Besley", serif;
 }
